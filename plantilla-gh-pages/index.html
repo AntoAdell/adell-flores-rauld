@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FEFA ADELL Y JO</title>
+    <link rel="icon" type="image/png" href="media/nombres-01.png" />
+    <!-- Metadatos genéricos -->
+    <meta name="description" content=" MUESTRA DE LOS PROYECTOS DE TRES AMIGAS HACIENDO TRABAJOS JUNTAS ">
+    <meta name="image" content="media/nosotras-01.jpg">
+    <!-- Metadatos Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content=" ADELL JO Y FEFA ">
+    <meta name="twitter:description" content=" MUESTRA DE LOS PROYECTOSTRES DE TRES AMIGAS HACIENDO TRABAJOS JUNTAS ">
+    <meta name="twitter:image:src" content="media/nosotras-01.jpg">
+    <!-- Metadatos Open Graph (Facebook, Pinterest & LinkedIn) -->
+    <meta name="og:title" content=" ADELL JO Y FEFA ">
+    <meta name="og:description" content=" MUESTRA DE LOS PROYECTOS DE TRES AMIGAS HACIENDO TRABAJOS JUNTAS ">
+    <meta name="og:image" content="media/nosotras-01.jpg">
+    <meta name="og:type" content="website">
+    <!-- Ahora vinculamos el estilo -->
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1> ADELL JO Y FEFA </h1>
+        <h2> MUESTRA DE LOS PROYECTOS DE TRES AMIGAS HACIENDO TRABAJOS JUNTAS </h2>
+    </header>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="media/videosinnegro-2.webm" type="video/webm">
+        <source src="media/videosinnegro.mp4" type="video/mp4">
+    </video>
+    <main>
+        <section id="equipo">
+            <h3>Quiénes somos</h3>
+            <div class="integrante">
+                <h4>ANTONIA ADELL</h4>
+                <address><a href="mailto:mail@uc.cl">adadell@uc.cl</a></address>
+                <blockquote>I would rather die of passion than boredom <cite>Van Gogh</cite></blockquote>
+            </div>
+            <div class="integrante">
+                <h4>MARÍA JOSÉ RAULD</h4>
+                <address><a href="mailto:mail@uc.cl">mjrauld@uc.cl</a></address>
+                <blockquote>Can I be excused for the rest of my life?<cite>Sponge Bob</cite></blockquote>
+            </div>
+            <div class="integrante">
+                <h4>FERNANDA FLORES</h4>
+                <address><a href="mailto:mail@uc.cl">fbflores1@uc.cl</a></address>
+                <blockquote>Si eres tú mismo y lo expresas la gente te admirara por eso<cite>Demi Lovato</cite></blockquote>
+            </div>
+        </section>
+        <section id="portafolio">
+            <h3>Nuestros trabajos</h3>
+            <!--acá se colocan y organizan las cosas con programación-->
+        </section>
+    </main>
+    <footer>
+        <p>Procesos de Producción · sección web · segundo semestre · 2019</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script>
+        window.onload = function() {
+            var container = document.querySelector('#portafolio');
+            var msnry = new Masonry(portafolio, {
+                itemSelector: '.item'
+            });
+        };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="portafolio.js"></script>
+</body>
+
+</html>
